@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif, Arial, Helvetica;
+
+    height: 100vh;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5D8736;
+
+    width: 100%;
+
+    position: sticky;
+    top: 0;
+}
+
+header .lambang img{
+    width: 300px;
+}
+
+header .navbar-container .nav-list ul{
+    display: flex;
+    justify-content: center;
+
+    margin-right: 20px;
+    gap: 4rem 2rem ;
+}
+
+header .navbar-container .nav-list li{
+    list-style-type: none;
+}
+
+header .navbar-container .nav-list a{
+    padding: 0.5rem 0.5rem;
+    border-radius: 10px;
+
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+header .navbar-container .nav-list a:hover{
+    background-color: #809D3C;
+    color: white;
+}
+
+main{
+    display: flex;
+    gap : 2rem;
+
+    padding: 20px;
+    gap: 1rem 2rem;
+}
+
+main .content{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    padding: 20px;
+}
+
+main .tugu img{
+    width: 100%;
+}
+
+article p{
+    text-align: justify;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+}
+
+aside .container{
+    background-color: #F4FFC3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    width: 350px;
+    padding: 0.5rem;
+}
+
+aside .container .lambang-aside img{
+    width: 100px;
+    display: flex;
+    margin: auto;
+}
+
+aside p{
+    text-align: center;
+}
+
+aside ul{
+    text-align: justify;
+}
+
+aside .berita{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    
+}
+
+aside .berita img{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+aside .berita a{
+    color: black;
+    text-decoration: none;
+}
+
+aside .berita a:hover{
+    color: #809D3C;
+}
+
+aside .berita .list-berita{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    margin: 2px;
+    padding: 10px;
+
+    display: flex;
+}
+
+aside .berita .list-berita a{
+    margin: 5px;
+    text-align: justify;
+}
+
+footer{
+    background-color: #A9C46C;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    main {
+        flex-flow: column nowrap;
+      }
+    main aside {
+        align-self: center;
+      }
+
+    header{
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
